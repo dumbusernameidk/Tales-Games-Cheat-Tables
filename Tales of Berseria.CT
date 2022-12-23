@@ -2920,12 +2920,18 @@
           <LastState/>
           <VariableType>Auto Assembler Script</VariableType>
           <AssemblerScript Async="1">[ENABLE]
-Tales of Berseria.exe+171B4F4:
+Tales of Berseria.exe+171B4F4:             //Alt-Tab Pause
 db C6 05 B9 96 8E FF 00
+
+Tales of Berseria.exe+19DC1EF:            //Prevents Music cutting out when tabbing out
+nop 6
 
 [DISABLE]
 Tales of Berseria.exe+171B4F4:
 db C6 05 B9 96 8E FF 01
+
+Tales of Berseria.exe+19DC1EF:
+db 87 05 C3 9E 52 FF
 </AssemblerScript>
         </CheatEntry>
         <CheatEntry>
